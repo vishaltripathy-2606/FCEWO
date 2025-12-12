@@ -1,36 +1,20 @@
-# Gitignore for FCEWO
-
 # Python
 __pycache__/
 *.py[cod]
 *$py.class
 *.so
 .Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-pip-wheel-metadata/
-share/python-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-MANIFEST
-
-# Virtual environments
-venv/
 env/
+venv/
 ENV/
-env.bak/
-venv.bak/
+.venv
+*.egg-info/
+dist/
+build/
+
+# Environment variables
+.env
+.env.local
 
 # IDE
 .vscode/
@@ -38,51 +22,27 @@ venv.bak/
 *.swp
 *.swo
 *~
+
+# OS
 .DS_Store
-
-# Environment variables
-.env
-.env.local
-.env.*.local
-
-# Database
-*.db
-*.sqlite
-*.sqlite3
+Thumbs.db
 
 # Logs
 *.log
 logs/
 
-# Cache
-.cache/
-*.cache
-.pytest_cache/
-.mypy_cache/
-.dmypy.json
-dmypy.json
-
-# Testing
-.coverage
-htmlcov/
+# Data
+data/
+*.csv
+*.json
+*.db
+*.sqlite
 
 # Docker
-docker-compose.override.yml
-.docker/
+.dockerignore
 
-# Temporary files
-tmp/
-temp/
-*.tmp
+# Model files
+models/*.pkl
+models/*.h5
+*.joblib
 
-# OS files
-Thumbs.db
-.DS_Store
-.AppleDouble
-.LSOverride
-
-# Project specific
-data/raw/
-data/processed/
-models/trained/
-reports/
